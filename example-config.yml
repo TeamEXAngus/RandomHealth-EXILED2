@@ -1,0 +1,13 @@
+random_health:
+
+  is_enabled: true # Whether or not the plugin is enabled
+  
+  role_health_bounds:
+# Example
+# - - Numeric RoleID
+#   - Min value
+#   - Max value
+
+  - - 1 # ID 1 is Class-D
+    - 100 # Class-D will have between 100 and 120 HP
+    - 120
