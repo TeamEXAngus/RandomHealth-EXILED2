@@ -7,8 +7,7 @@ namespace RandomHealth
 {
     public class RandomHealth : Plugin<Config>
     {
-        private static RandomHealth singleton = new RandomHealth();
-        public static RandomHealth Instance => singleton;
+        public static RandomHealth Instance;
 
         public override PluginPriority Priority { get; } = PluginPriority.Medium;
 
@@ -22,6 +21,8 @@ namespace RandomHealth
 
         public override void OnEnabled()
         {
+            Instance = this;
+
             RegisterEvents();
         }
 
